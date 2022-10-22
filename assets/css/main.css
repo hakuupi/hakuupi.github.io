@@ -2789,7 +2789,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #FF512F;
+					border-top: solid 2px #fd6e52;
 					display: block;
 					padding: 0;
 				}
@@ -3076,7 +3076,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #fdc0b6;
+						background: rgb(250, 138, 121);
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;

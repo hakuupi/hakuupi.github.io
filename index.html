@@ -145,23 +145,46 @@
 							<!-- Two -->
 							<section id="two">
 								<div class="container">
+									<script type="text/javascript">
+										function showMe (box) {
+													var chboxs = document.getElementsByName("c1");
+													var vis = "none";
+													for(var i=0;i<chboxs.length;i++) { 
+														if(chboxs[i].checked){
+														vis = "block";
+															break;
+														}
+													}
+													document.getElementById(box).style.display = vis;
+												}
+												</script>
+												
 										<h1>A Few Fun Facts</h1>
 												<h3>Things I Like To Do</h3>
 												<p>... because I find them stimulating, satisfying, magnificently beautiful, thought-provoking, pleasingly meaningful, calming.... and various combinations of the above</p>
 												<ul class="feature-icons">
-													<li><input type="checkbox" id="schumann" name="schumann" checked>
+													<li><input type="checkbox" id="schumann" name="c1" onclick="showMe('div1')">
 														<label for="schumann">Feel at peace whenever I play Schumann </label></li>
-													<li><input type="checkbox" id="code" name="code" checked>
+													<li><input type="checkbox" id="code" name="c1" onclick="showMe('div2')">
 														<label for="code">Use code for creative projects</label></li>
-													<li><input type="checkbox" id="lit" name="lit" checked>
+														<div id="div1" style="display:none">
+															<p>Here are my top three go-tos: <a href="https://vmirror.imslp.org/files/imglnks/usimg/9/91/IMSLP289811-PMLP02189-Schumann,_Robert_Werke_Breitkopf_Gregg_Serie_7_Band_2_RS_51_Op_13_scan.pdf">Symphonic Etudes</a>, <a href="https://vmirror.imslp.org/files/imglnks/usimg/0/06/IMSLP51539-PMLP02799-RS53.pdf">Kinderszenen</a>, and <a href="https://vmirror.imslp.org/files/imglnks/usimg/9/9f/IMSLP70919-PMLP02821-Schumann--Kreisleriana-Op16--Ed-B%26H.pdf">Kreisleriana</a>.</p>
+															</div>
+														<div id="div1" style="display:none">
+															<p>Like <a href="https://drive.google.com/file/d/1DWeb0brELjI0Sj5jiuNlYckLreHT0w8X/view?usp=sharing">this one project</a> I did with LEDs manually programmed to match some of my music pieces</p>
+															</div>
+													<li><input type="checkbox" id="lit" name="c1" onclick="showMe('div3')">
 														<label for="lit">Read classical german, french, english and russian literature</label></li>
-													<li><input type="checkbox" id="scores" name="scores" checked>
+													<li><input type="checkbox" id="scores" name="c1" onclick="showMe('div3')">
 														<label for="scores">Read music scores and make my mind play the sounds in my head</label></li>
-													<li><input type="checkbox" id="learn" name="learn" checked>
+														<div id="div3" style="display:none">
+															<p>Elaboration to come!</p>
+															</div>
+														<li><input type="checkbox" id="learn" name="c1" onclick="showMe('div3')">
 														<label for="learn">Learn new and awesome things, constantly! :)</label></li>
-													<li><input type="checkbox" id="sports" name="sports" checked>
+													<li><input type="checkbox" id="sports" name="c1" onclick="showMe('div3')">
 														<label for="sports">Run, ski, and go on hiking adventures with friends</label></li>
-													<li><input type="checkbox" id="food" name="food" checked>
+													<li><input type="checkbox" id="food" name="c1" onclick="showMe('div3')">
 														<label for="food">Eat good food, especially cheese and ice-cream</label></li>
 												</ul>
 								</div>

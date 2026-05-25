@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #888;
+		color: #191919;
 		font-family: "Lato", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -146,8 +146,15 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
+	h1 {
+		font-size: 2.1em;
+		font-weight: 700;
+		line-height: 1.2em;
+		letter-spacing: -0.02em;
+	}
+
 	h2 {
-		font-size: 2em;
+		font-size: 1.75em;
 		line-height: 1.5em;
 	}
 
@@ -1786,7 +1793,7 @@ input, select, textarea {
 
 	header.major h2 {
 		color: #FF512F;
-		font-size: 3.5em;
+		font-size: 2.5em;
 	}
 
 		header.major h2 + p {
